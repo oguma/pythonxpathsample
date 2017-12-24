@@ -1,11 +1,12 @@
+import sys
 from lxml import etree
 
-PRICE_MIN = 110
-
-prefix = "//item[price>=%d]" % PRICE_MIN
 xml = etree.parse(open("data.xml", 'r'), parser=etree.XMLParser())
 
-print("============\nItems(>=%d)\n============" % PRICE_MIN)
+price_min = int(sys.argv[1])
+prefix = "//item[price>=%d]" % price_min
+
+print("============\nItems(>=%d)\n============" % price_min)
 for item in xml.xpath(prefix):
     name = item.xpath("name/text()")[0]
     price = int(item.xpath("price/text()")[0])
