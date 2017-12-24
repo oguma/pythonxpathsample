@@ -1,11 +1,7 @@
 # pythonxpathsample
 
+## data.xml
 ```
-$ pip install lxml
-```
-
-```
-$ cat data.xml 
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
     <item>
@@ -23,6 +19,12 @@ $ cat data.xml
 </data>
 ```
 
+## Installing lxml
+```
+$ pip install lxml
+```
+
+## Run
 ```
 $ python xpathsample.py 110
 ============
