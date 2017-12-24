@@ -19,7 +19,7 @@
 </data>
 ```
 
-## Installing lxml
+## Install lxml
 ```
 $ pip install lxml
 ```
