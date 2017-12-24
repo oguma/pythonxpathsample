@@ -24,7 +24,7 @@ $ cat data.xml
 ```
 
 ```
-$ python xpathsample.py
+$ python xpathsample.py 110
 ============
 Items(>=110)
 ============
